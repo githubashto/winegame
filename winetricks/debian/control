@@ -1,0 +1,24 @@
+Source: winetricks
+Section: otherosfs
+Priority: optional
+Maintainer: Scott Ritchie <scottritchie@ubuntu.com>
+Uploaders: Scott Ritchie <scottritchie@ubuntu.com>
+Build-Depends: debhelper (>= 5.0.0)
+Standards-Version: 3.7.3
+
+Package: winetricks
+Architecture: i386 amd64
+Pre-Depends: dpkg (>= 1.14.12ubuntu3)
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Recommends: wine1.2
+Homepage: http://wiki.winehq.org/winetricks
+Description: Microsoft Windows Compatibility Layer (winetricks)
+ Wine is a compatibility layer for running Windows applications on Linux.
+ Applications are run at full speed without the need of cpu emulation. Wine
+ does not require Microsoft Windows, however it can use native system dll
+ files in place of its own if they are available.
+ .
+ This package includes a shell script that can be used to download and
+ install various redistributable libraries that may be needed for some
+ programs to work in Wine.
+
