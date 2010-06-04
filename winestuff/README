@@ -32,9 +32,8 @@ a. get latest wine version sources from http://winehq.org
 b. After unpacking, create "orig" archive.
 For example, if your version is 1.1.44:
 tar czf wine_1.1.44.orig.tar.gz wine-1.1.44
-c. Get debian/ directory with apt-get:
-apt-get source wine
-cp -rf wine-1.1.32/debian wine-1.1.44 (modify comand depending on _debian_ and _latest_ wine versions)
+c. Get debian directory from ../wine/
+cp -rf ../wine wine-1.1.44 (modify comand depending on _debian_ and _latest_ wine versions)
 d. build Debian packages
 cd wine-1.1.44
 dpkg-buildpackage -rfakeroot
@@ -47,9 +46,9 @@ cd to winetricks/ directory and do step 2.
 4) After you installed wine & winetricks, build winestuff deb package:
 a.cp debian YOUR_WINESTUFF_DIR/debian
 cd ..
-b.)Edit debian/changelog (optional) with dch
-c.For making a binary package, do:
-dpkg-buildpackage -rfakeroot
+b. Edit debian/changelog (optional) with dch
+c. For making a binary package, do:
+  dpkg-buildpackage -rfakeroot
 d.For making a source package, do:
-debuild -S -sa
+  debuild -S -sa
   
