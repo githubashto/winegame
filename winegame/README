@@ -1,0 +1,24 @@
+There are an information for building WineGame with your package manager.
+
+    Directories
+================================
+
+ubuntu/ - debian information for building winegame on Ubuntu Lucid.
+debian/ - debian information for building winegame on Debian Unstable.
+
+    How to apply & build (both debian and ubuntu)
+===================================================
+1) Download winestuff from 
+  http://github.com/pashazz/winestuff
+2) Build Debian packages depending on your distro. You should folow instructions in os/README (same as this file)
+3) Install all packages you`re built. (winetricks, wine, winestuff0, winestuff-dev)
+4) copy one of directories (listed above) to the root of build tree, depending on your distro. For example, on Ubuntu you must do:
+  cp -rf ubuntu YOUR_WINEGAME_DIR/debian
+5) cd ..
+6) Optionally modify the changelog... for example:
+  dch "0-0.1.0" "Modify by Pupkin"
+7) build package:
+  dpkg-buildpackage -rfakeroot
+8) build source package:
+  debuild -S -sa
+9)Publish it!

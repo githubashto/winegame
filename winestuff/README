@@ -1,0 +1,55 @@
+This is information for your OS`s package manager.
+
+I. ubuntu/
+
+This is source for Ubuntu 10.04 Lucid package. See ppa:pzinin/winegame.
+
+    Appending
+=============================
+0) install required packages:
+sudo add-apt-repository ppa:ubuntu-wine/ppa
+sudo aptitude update 
+sudo aptitude install libqt4-dev winetricks wine  debhelper libqt4-sql-sqlite fuseiso
+1) Copy it into build tree`s root.
+cp ubuntu YOUR_WINESTUFF_DIR/debian
+cd ..
+2)Edit debian/changelog (optional) with dch
+3)For making a binary package, do:
+dpkg-buildpackage -rfakeroot
+4)For making a source package, do:
+debuild -S -sa
+
+II. debian/
+
+This is sources for Debian package. Also, winetricks/ is related to Debian
+
+    Appending
+=============================
+1) Install required packages
+sudo aptitude install libqt4-dev debhelper libqt4-sql-sqlite fuseiso
+2) You need to build & install latest wine, because it has very old version in Debian. To do this:
+a. get latest wine version sources from http://winehq.org
+b. After unpacking, create "orig" archive.
+For example, if your version is 1.1.44:
+tar czf wine_1.1.44.orig.tar.gz wine-1.1.44
+c. Get debian/ directory with apt-get:
+apt-get source wine
+cp -rf wine-1.1.32/debian wine-1.1.44 (modify comand depending on _debian_ and _latest_ wine versions)
+d. build Debian packages
+cd wine-1.1.44
+dpkg-buildpackage -rfakeroot
+cd ..
+su -c dpkg -i *.deb
+
+3) You need to build & install winetricks DEB. Well, it is just a shell script.
+cd to winetricks/ directory and do step 2.
+
+4) After you installed wine & winetricks, build winestuff deb package:
+a.cp debian YOUR_WINESTUFF_DIR/debian
+cd ..
+b.)Edit debian/changelog (optional) with dch
+c.For making a binary package, do:
+dpkg-buildpackage -rfakeroot
+d.For making a source package, do:
+debuild -S -sa
+  

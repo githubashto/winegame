@@ -1,0 +1,20 @@
+winegame (0.1.0-rc4-0pashazz2~ppa4) lucid; urgency=low
+
+  * Force winestuff0 dependence. 
+    
+ -- Pavel Zinin (Pashazz`s GnuPG key) <PZinin@gmail.com>  Fri, 04 Jun 2010 12:10:53 +0400
+
+winegame (0.1.0-rc4-0pashazz2~ppa3) lucid; urgency=low
+
+  * Upstream release 0.1.0-rc4. Try 2
+  
+ -- Pavel Zinin (Pashazz`s GnuPG key) <PZinin@gmail.com>  Thu, 03 Jun 2010 21:17:28 +0400
+
+winegame (0.1.0-rc4-0pashazz2~ppa2) lucid; urgency=low
+
+  * Upstream release 0.1.0-rc4. New packaging history
+  
+ -- Pavel Zinin (Pashazz`s GnuPG key) <PZinin@gmail.com>  Thu, 03 Jun 2010 20:32:41 +0400
+
+
+

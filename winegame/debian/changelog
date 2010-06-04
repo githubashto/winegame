@@ -1,0 +1,20 @@
+winegame (0.1.0-rc4-0~deb3) unstable; urgency=low
+
+  * Force winestuff0 dependence. 
+    
+ -- Pavel Zinin (Pashazz`s GnuPG key) <PZinin@gmail.com>  Fri, 04 Jun 2010 12:10:53 +0400
+
+winegame (0.1.0-rc4-0deb2) unstable; urgency=low
+
+  * Upstream release 0.1.0-rc4. Try 2
+  
+ -- Pavel Zinin (Pashazz`s GnuPG key) <PZinin@gmail.com>  Thu, 03 Jun 2010 21:17:28 +0400
+
+winegame (0.1.0-rc4-0~deb1) unstable; urgency=low
+
+  * Upstream release 0.1.0-rc4. New packaging history
+  
+ -- Pavel Zinin (Pashazz`s GnuPG key) <PZinin@gmail.com>  Thu, 03 Jun 2010 20:32:41 +0400
+
+
+

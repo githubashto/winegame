@@ -1,0 +1,15 @@
+winestuff (0.1.0-rc4-0~deb1) unstable; urgency=low
+
+  * Qt dependence.
+ 
+ -- Pavel Zinin (Pashazz`s GnuPG key) <PZinin@gmail.com>  Thu, 03 Jun 2010 18:35:04 +0400
+
+winestuff (0.1.0-rc4-0~deb2) unstable; urgency=low
+
+  * New upstream release.
+  * Initial Debian packaging
+
+ -- Pavel Zinin (Pashazz`s GnuPG key) <PZinin@gmail.com>  Thu, 03 Jun 2010 17:28:59 +0400
+
+
+
