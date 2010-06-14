@@ -1,3 +1,9 @@
+winegame (0.1.1-0pashazz1~ppa1) lucid; urgency=low
+
+  * Upstream release 0.1.0, Debian release 0.1.1 
+    
+ -- Pavel Zinin (Pashazz`s GnuPG key) <PZinin@gmail.com>  Mon, 14 Jun 2010 14:54:21 +0400
+
 winegame (0.1.0-rc4-0pashazz2~ppa4) lucid; urgency=low
 
   * Force winestuff0 dependence. 
